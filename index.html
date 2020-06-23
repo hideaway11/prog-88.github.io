@@ -1,58 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>introduction</title>
-    <link rel="stylesheet" href="winning.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-  </head>
+<head>
+  <meta charset="utf-8">
+    <title>lesson</title>
+    <meta name="Description" content=""/>
+    <meta name="viewport"　content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="pink.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <h1>Yusuke Tamino</h1>
-        </div>
-      </div>
-    </header>
+</head>
 
-    <div class="top">
-      <div class="container">
-        <h1>Look at my profile!</h1>
-      </div>
-    </div>
+<body>
+  <div class="pink">
+    <h1>YOUMAYEATへようこそ</h1>
+  </div>
 
-    <div class="profile">
-      <div class="container">
-        <div class="list">
-          <div class="icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <a class="name" href="file:///C:/Users/yusuketamino/Desktop/html_lesson/index.html">Personality</a>
-          </div>
-        </div>
-        <div class="list">
-          <div class="icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <a class="name" href="file:///C:/Users/yusuketamino/Desktop/html_lesson/index.html">Activity</a>
-          </div>
-        </div>
+  <div class="select">
+    <h5>ジャンルを選ぼう！</h5>
 
-      </div>
-    </div>
 
-    <div class="info">
-      <div class="container">
-        <div class="information">
-          <h3>information</h3>
-        </div>
-      </div>
-    </div>
+    <select name='kind'>
+      <?php
+        $kinds=array("a","b","c","d");
+        foreach($kinds as $kind){
+          echo "<option value='{$kind}'>{$kind}</option>";
+        }
+      ?>
 
-    <footer>
-      <div class="footer-left">
-        <h1>introduction</h1>
-      </div class="fotter-left">
-    </footer>
+    <form action="#" method="post">
+      <input type="submit" value="search">
+    </post>
 
-  </body>
-</html>
+
+  </div>
+</body>
